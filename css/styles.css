@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+
+button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.board {
+    width: 300px;
+    margin: 100px auto 10px;
+
+}
+.player-turn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.space {
+    border: solid black 2px;
+    height: 100px;
+    width: 100px;
+}
+
+.zero, .one, .two {
+    border-top: none;
+}
+
+.zero, .three, .six {
+    border-left: none;
+}
+
+.six, .seven, .eight {
+    border-bottom: none;
+}
+
+.eight, .five, .two {
+    border-right: none;
+}
