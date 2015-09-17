@@ -34,66 +34,66 @@ button {
 .space {
     width: 150px;
     height: 150px;
+    background-color: rgb(136, 143, 157);
     border: black solid 2px;
     border-radius: 20%;
     display: inline-block;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+             0 -2px 0 #c9c9c9,
+             0 -3px 0 #bbb,
+             0 -4px 0 #b9b9b9,
+             0 -5px 0 #aaa,
+             0 -6px 1px rgba(0,0,0,.1),
+             0 0 5px rgba(0,0,0,.1),
+             0 -1px 3px rgba(0,0,0,.3),
+             0 -3px 5px rgba(0,0,0,.2),
+             0 -5px 10px rgba(0,0,0,.25),
+             0 -10px 10px rgba(0,0,0,.2),
+             0 -20px 10px rgba(0,0,0,.15);
 
-}
-
-.zero, .one, .two {
-    border-top: none;
-}
-
-.zero, .three, .six {
-    border-left: none;
-}
-
-.six, .seven, .eight {
-    border-bottom: none;
-}
-
-.eight, .five, .two {
-    border-right: none;
 }
 
 
 
 /*box shadows*/
 .zero {
-    box-shadow: -8px -4px 4px rgb(34, 39, 45);
+    box-shadow: -8px -4px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .zero:hover {
-    box-shadow: -6px -2px 5px rgb(34, 39, 45);
+    box-shadow: -6px -2px 5px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+
 }
 .zero:active {
     box-shadow: -4px -1px 1px rgb(34, 39, 45);
 }
 
 .one {
-    box-shadow: 0px -6px 4px rgb(34, 39, 45);
+    box-shadow: 0px -6px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .one:hover {
-    box-shadow: 0px -4px 2px rgb(34, 39, 45);
+    box-shadow: 0px -4px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .one:active {
     box-shadow: 0px -2px 1px rgb(34, 39, 45);
 }
 
 .two {
-    box-shadow: 8px -4px 4px rgb(34, 39, 45);
+    box-shadow: 8px -4px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .two:hover {
-    box-shadow: 6px -2px 2px rgb(34, 39, 45);
+    box-shadow: 6px -2px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .two:active {
     box-shadow: 4px -1px 1px rgb(34, 39, 45);
 }
 
 .three {
-    box-shadow:  -8px 0px 4px rgb(34, 39, 45);
+    box-shadow:  -8px 0px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .three:hover {
-    box-shadow:  -6px 0px 2px rgb(34, 39, 45);
+    box-shadow:  -6px 0px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .three:active {
     box-shadow:  -4px 0px 1px rgb(34, 39, 45);
@@ -103,48 +103,114 @@ button {
     box-shadow:  inset 0px 0px 6px rgb(34, 39, 45);
 }
 .four:hover {
-    box-shadow:  inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow:  inset 0px 0px 15px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .four:active {
     box-shadow:  inset 0px 0px 20px rgb(34, 39, 45);
 }
 
 .five {
-    box-shadow: 8px 0px 4px rgb(34, 39, 45);
+    box-shadow: 8px 0px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .five:hover {
-    box-shadow: 6px 0px 2px rgb(34, 39, 45);
+    box-shadow: 6px 0px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .five:active {
     box-shadow: 4px 0px 1px rgb(34, 39, 45);
 }
 
 .six {
-    box-shadow:  -8px 4px 4px rgb(34, 39, 45);
+    box-shadow:  -8px 4px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .six:hover {
-    box-shadow:  -6px 2px 2px rgb(34, 39, 45);
+    box-shadow:  -6px 2px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .six:active {
     box-shadow:  -4px 1px 1px rgb(34, 39, 45);
 }
 
 .seven {
-    box-shadow:  0px 6px 4px rgb(34, 39, 45);
+    box-shadow:  0px 6px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .seven:hover {
-    box-shadow:  0px 4px 2px rgb(34, 39, 45);
+    box-shadow:  0px 4px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .seven:active {
     box-shadow:  0px 2px 1px rgb(34, 39, 45);
 }
 
 .eight {
-    box-shadow:  8px 6px 4px rgb(34, 39, 45);
+    box-shadow:  8px 6px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
 }
 .eight:hover {
-    box-shadow:  6px 4px 2px rgb(34, 39, 45);
+    box-shadow:  6px 4px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
 }
 .eight:active {
     box-shadow:  6px 2px 1px rgb(34, 39, 45);
+}
+
+/*************************************
+*  Button circle animation
+*/
+
+
+.clicker{
+  background-color: white;
+  outline: none;
+  font-weight: 600;
+    position:absolute;
+  cursor: pointer;
+  padding: 0;
+    border: none;
+    height: 64px;
+    width: 64px;
+  left: 8px;
+  top: 8px;
+    border-radius: 100px;
+    z-index: 2;
+}
+
+.clicker:active{
+    transform: translate(0, 1px);
+    height: 63px;
+    box-shadow: 0px 1px 0 0 rgb(190,190,190) inset;
+}
+
+.circle{
+    position: relative;
+    border-radius:40px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.clicker + .circle, .clicker:active + .circle {
+    animation: rotator linear .68s infinite;
+}
+
+.clicker:active + .circle {
+    animation: rotator linear .68s;
+}
+
+@keyframes rotator{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+
+.angled {
+      background-image: linear-gradient(45deg,
+                white 0%,
+                white 30%,
+                rgb(20,190,235) 30%,
+                rgb(20,190,235) 70%,
+                white 70%,
+                white 100%);
+}
+
+.wrap{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto 15px auto;
 }

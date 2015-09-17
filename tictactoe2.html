@@ -5,41 +5,46 @@
         <title>Tic Tac Toe</title>
         <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="css/hover.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="css/styles2.css" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
         <div class="container">
             <h1>Tic Tac Toe</h1>
-            <button id="play" class="hvr-radial-out">Play</button>
+            <div class="wrap">
+              <button id="play" class="clicker">Play</button>
+              <div class="circle angled"></div>
+            </div>
             <h2 class="player-turn"></h2>
             <div class="board">
                 <div class="row">
-                    <div class="space zero hvr-pulse-shrink">
+                    <div class="space zero hvr-pulse-shrink" value=0>
                     </div>
-                    <div class="space one hvr-pulse-shrink">
+                    <div class="space one hvr-pulse-shrink" value=1>
                     </div>
-                    <div class="space two hvr-pulse-shrink">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="space three hvr-pulse-shrink">
-                    </div>
-                    <div class="space four hvr-pulse-shrink">
-                    </div>
-                    <div class="space five hvr-pulse-shrink">
+                    <div class="space two hvr-pulse-shrink" value=2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="space six hvr-pulse-shrink">
+                    <div class="space three hvr-pulse-shrink" value=3>
                     </div>
-                    <div class="space seven hvr-pulse-shrink">
+                    <div class="space four hvr-pulse-shrink" value=4>
                     </div>
-                    <div class="space eight hvr-pulse-shrink">
+                    <div class="space five hvr-pulse-shrink" value=5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="space six hvr-pulse-shrink" value=6>
+                    </div>
+                    <div class="space seven hvr-pulse-shrink" value=7>
+                    </div>
+                    <div class="space eight hvr-pulse-shrink" value=8>
                     </div>
                 </div>
             </div>
         </div>
         <script src="js/jquery-1.11.3.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/jquery.textillate.js"></script>
     </body>
 </html>
