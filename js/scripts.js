@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("button").click(function() {
         // read value for 2-player or computer and assign. 4 possible values read from page
         $("button").addClass("hide");
+        $(".radio-buttons").addClass("hide");
         gameOver = 0;
         computer = $("input:radio[name='game-type']:checked").val();
         console.log(computer);
@@ -15,7 +16,7 @@ $(document).ready(function() {
 
 
         $(".space").one('click', function() {
-            // debugger;
+            debugger;
             mark = getMark();
             turn($(this).attr("value"));
             $(this).append("<h1 class='"+mark+"'> "+mark+" </h1>");
@@ -70,6 +71,7 @@ function testWin(board) {
         alert("Player 2 Wins!");
         location.reload();
     } else if (turns === 10) {
+        gameOver = 1;
         alert("Cat's Game");
         location.reload();
     }
@@ -108,4 +110,10 @@ function randomPick() {
     turns++;
 
     return randomNumber;
+}
+
+function smartPick() {
+
+
+    return 2;
 }

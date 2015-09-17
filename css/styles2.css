@@ -1,5 +1,7 @@
 body {
+    background-image: url(../images/shley-tree-2.png);
     background-color: rgb(76, 94, 113);
+    color: white;
 }
 
 div {
@@ -13,6 +15,7 @@ button {
     border-radius: 15px;
     border: none;
     padding: none;
+    color: black;
 }
 
 .hide {
@@ -63,94 +66,94 @@ button {
 
 /*box shadows*/
 .zero {
-    box-shadow: -8px -4px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow: -8px -4px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .zero:hover {
-    box-shadow: -6px -2px 5px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow: -6px -2px 5px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 
 }
 .zero:active {
-    box-shadow: -4px -1px 1px rgb(34, 39, 45);
+    box-shadow: -4px -1px 1px rgba(34, 39, 45, .50);
 }
 
 .one {
-    box-shadow: 0px -6px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow: 0px -6px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .one:hover {
-    box-shadow: 0px -4px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow: 0px -4px 2px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .one:active {
-    box-shadow: 0px -2px 1px rgb(34, 39, 45);
+    box-shadow: 0px -2px 1px rgba(34, 39, 45, .50);
 }
 
 .two {
-    box-shadow: 8px -4px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow: 8px -4px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .two:hover {
-    box-shadow: 6px -2px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow: 6px -2px 2px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .two:active {
-    box-shadow: 4px -1px 1px rgb(34, 39, 45);
+    box-shadow: 4px -1px 1px rgba(34, 39, 45, .50);
 }
 
 .three {
-    box-shadow:  -8px 0px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow:  -8px 0px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .three:hover {
-    box-shadow:  -6px 0px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow:  -6px 0px 2px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .three:active {
-    box-shadow:  -4px 0px 1px rgb(34, 39, 45);
+    box-shadow:  -4px 0px 1px rgba(34, 39, 45, .50);
 }
 
 .four {
-    box-shadow:  inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow:  inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .four:hover {
-    box-shadow:  inset 0px 0px 15px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow:  inset 0px 0px 15px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .four:active {
-    box-shadow:  inset 0px 0px 20px rgb(34, 39, 45);
+    box-shadow:  inset 0px 0px 20px rgba(34, 39, 45, .50);
 }
 
 .five {
-    box-shadow: 8px 0px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow: 8px 0px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .five:hover {
-    box-shadow: 6px 0px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow: 6px 0px 2px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .five:active {
-    box-shadow: 4px 0px 1px rgb(34, 39, 45);
+    box-shadow: 4px 0px 1px rgba(34, 39, 45, .50);
 }
 
 .six {
-    box-shadow:  -8px 4px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow:  -8px 4px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .six:hover {
-    box-shadow:  -6px 2px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow:  -6px 2px 2px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .six:active {
-    box-shadow:  -4px 1px 1px rgb(34, 39, 45);
+    box-shadow:  -4px 1px 1px rgba(34, 39, 45, .50);
 }
 
 .seven {
-    box-shadow:  0px 6px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow:  0px 6px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .seven:hover {
-    box-shadow:  0px 4px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow:  0px 4px 2px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .seven:active {
-    box-shadow:  0px 2px 1px rgb(34, 39, 45);
+    box-shadow:  0px 2px 1px rgba(34, 39, 45, .50);
 }
 
 .eight {
-    box-shadow:  8px 6px 4px rgb(34, 39, 45), inset 0px 0px 6px rgb(34, 39, 45);
+    box-shadow:  8px 6px 4px rgba(34, 39, 45, .50), inset 0px 0px 6px rgba(34, 39, 45, .50);
 }
 .eight:hover {
-    box-shadow:  6px 4px 2px rgb(34, 39, 45), inset 0px 0px 15px rgb(34, 39, 45);
+    box-shadow:  6px 4px 2px rgba(34, 39, 45, .50), inset 0px 0px 15px rgba(34, 39, 45, .50);
 }
 .eight:active {
-    box-shadow:  6px 2px 1px rgb(34, 39, 45);
+    box-shadow:  6px 2px 1px rgba(34, 39, 45, .50);
 }
 
 /*************************************
