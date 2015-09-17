@@ -6,8 +6,10 @@ $(document).ready(function() {
         player = 1;
         turns = 1;
         newBoard = new Board([0,0,0,0,0,0,0,0,0]);
+        resetBoard();
+        $(".player-turn").text(getPlayer());
 
-        $(".zero").click(function() {
+        $(".zero").one('click', function() {
             mark = getMark();
             turn(0);
             $(".zero").append("<h1 class='"+mark+"'> "+mark+" </h1>");
@@ -15,56 +17,56 @@ $(document).ready(function() {
             $(".player-turn").text(getPlayer());
         });
 
-        $(".one").click(function() {
+        $(".one").one('click', function() {
             mark = getMark();
             turn(1);
             $(".one").append("<h1 class='"+mark+"'> "+mark+" </h1>");
             testWin(newBoard.board);
             $(".player-turn").text(getPlayer());
         });
-        $(".two").click(function() {
+        $(".two").one('click', function() {
             mark = getMark();
             turn(2);
             $(".two").append("<h1 class='"+mark+"'> "+mark+" </h1>");
             testWin(newBoard.board);
             $(".player-turn").text(getPlayer());
         });
-        $(".three").click(function() {
+        $(".three").one('click', function() {
             mark = getMark();
             turn(3);
             $(".three").append("<h1 class='"+mark+"'> "+mark+" </h1>");
             testWin(newBoard.board);
             $(".player-turn").text(getPlayer());
         });
-        $(".four").click(function() {
+        $(".four").one('click', function() {
             mark = getMark();
             turn(4);
             $(".four").append("<h1 class='"+mark+"'> "+mark+" </h1>");
             testWin(newBoard.board);
             $(".player-turn").text(getPlayer());
         });
-        $(".five").click(function() {
+        $(".five").one('click', function() {
             mark = getMark();
             turn(5);
             $(".five").append("<h1 class='"+mark+"'> "+mark+" </h1>");
             testWin(newBoard.board);
             $(".player-turn").text(getPlayer());
         });
-        $(".six").click(function() {
+        $(".six").one('click', function() {
             mark = getMark();
             turn(6);
             $(".six").append("<h1 class='"+mark+"'> "+mark+" </h1>");
             testWin(newBoard.board);
             $(".player-turn").text(getPlayer());
         });
-        $(".seven").click(function() {
+        $(".seven").one('click', function() {
             mark = getMark();
             turn(7);
             $(".seven").append("<h1 class='"+mark+"'> "+mark+" </h1>");
             testWin(newBoard.board);
             $(".player-turn").text(getPlayer());
         });
-        $(".eight").click(function() {
+        $(".eight").one('click', function() {
             mark = getMark();
             turn(8);
             $(".eight").append("<h1 class='"+mark+"'> "+mark+" </h1>");
@@ -109,8 +111,10 @@ function testWin(board) {
     if (turns === 10) { return alert("Tie Game"); }
 
     if(row1 === 3 || row2 ===3 || row3 ===3 || col1 ===3 || col2 ===3 || col3 ===3 || diag1 ===3 || diag2 ===3) {
-      return alert("Player 1 Wins!");
+        $(".space").off("click");
+        return alert("Player 1 Wins!");
     } else if (row1 === 12 || row2 ===12 || row3 ===12 || col1 ===12 || col2 ===12 || col3 ===12 || diag1 ===12 || diag2 ===12) {
+        $(".space").off("click");
         return alert("Player 2 Wins!");
     }
 
@@ -172,4 +176,16 @@ function checkWin() {
     } else {
         ;
     }
+}
+
+function resetBoard() {
+    $(".zero").empty();
+    $(".one").empty();
+    $(".two").empty();
+    $(".three").empty();
+    $(".four").empty();
+    $(".five").empty();
+    $(".six").empty();
+    $(".seven").empty();
+    $(".eight").empty();
 }

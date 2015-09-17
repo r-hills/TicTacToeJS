@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(76, 94, 113);
+}
+
+div {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+button {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 20px auto;
+    color: #ccc;
+    background-color: #555;
+    background: -webkit-linear-gradient(#888, #555);
+    background: linear-gradient(#888, #555);
+    border: 0 none;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 #000;
+    box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+
+}
+
+.board {
+    height: 450px;
+    width: 450px;
+//hack to get rid of the space between the divs since they are inline-block elements
+    font-size: 0;
+    margin: auto;
+}
+.row {
+    width: 550px;
+    height: 150px;
+    display: flex;
+}
+.space {
+    width: 150px;
+    height: 150px;
+    border: black solid 2px;
+    border-radius: 20%;
+    display: inline-block;
+
+}
+
+.zero, .one, .two {
+    border-top: none;
+}
+
+.zero, .three, .six {
+    border-left: none;
+}
+
+.six, .seven, .eight {
+    border-bottom: none;
+}
+
+.eight, .five, .two {
+    border-right: none;
+}
+
+
+
+/*box shadows*/
+.zero {
+    box-shadow: -8px -4px 4px rgb(34, 39, 45);
+}
+.zero:hover {
+    box-shadow: -6px -2px 5px rgb(34, 39, 45);
+}
+.zero:active {
+    box-shadow: -4px -1px 1px rgb(34, 39, 45);
+}
+
+.one {
+    box-shadow: 0px -6px 4px rgb(34, 39, 45);
+}
+.one:hover {
+    box-shadow: 0px -4px 2px rgb(34, 39, 45);
+}
+.one:active {
+    box-shadow: 0px -2px 1px rgb(34, 39, 45);
+}
+
+.two {
+    box-shadow: 8px -4px 4px rgb(34, 39, 45);
+}
+.two:hover {
+    box-shadow: 6px -2px 2px rgb(34, 39, 45);
+}
+.two:active {
+    box-shadow: 4px -1px 1px rgb(34, 39, 45);
+}
+
+.three {
+    box-shadow:  -8px 0px 4px rgb(34, 39, 45);
+}
+.three:hover {
+    box-shadow:  -6px 0px 2px rgb(34, 39, 45);
+}
+.three:active {
+    box-shadow:  -4px 0px 1px rgb(34, 39, 45);
+}
+
+.four {
+    box-shadow:  inset 0px 0px 6px rgb(34, 39, 45);
+}
+.four:hover {
+    box-shadow:  inset 0px 0px 15px rgb(34, 39, 45);
+}
+.four:active {
+    box-shadow:  inset 0px 0px 20px rgb(34, 39, 45);
+}
+
+.five {
+    box-shadow: 8px 0px 4px rgb(34, 39, 45);
+}
+.five:hover {
+    box-shadow: 6px 0px 2px rgb(34, 39, 45);
+}
+.five:active {
+    box-shadow: 4px 0px 1px rgb(34, 39, 45);
+}
+
+.six {
+    box-shadow:  -8px 4px 4px rgb(34, 39, 45);
+}
+.six:hover {
+    box-shadow:  -6px 2px 2px rgb(34, 39, 45);
+}
+.six:active {
+    box-shadow:  -4px 1px 1px rgb(34, 39, 45);
+}
+
+.seven {
+    box-shadow:  0px 6px 4px rgb(34, 39, 45);
+}
+.seven:hover {
+    box-shadow:  0px 4px 2px rgb(34, 39, 45);
+}
+.seven:active {
+    box-shadow:  0px 2px 1px rgb(34, 39, 45);
+}
+
+.eight {
+    box-shadow:  8px 6px 4px rgb(34, 39, 45);
+}
+.eight:hover {
+    box-shadow:  6px 4px 2px rgb(34, 39, 45);
+}
+.eight:active {
+    box-shadow:  6px 2px 1px rgb(34, 39, 45);
+}
