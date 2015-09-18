@@ -60,30 +60,29 @@ Board.prototype.markBoard = function(player, index) {
 
 function testWin(board) {
     console.log(board);
-    var row1 = board[0] + board[1] + board[2],
-        row2 = board[3] + board[4] + board[5],
-        row3 = board[6] + board[7] + board[8],
-        col1 = board[0] + board[3] + board[6],
-        col2 = board[1] + board[4] + board[7],
-        col3 = board[2] + board[5] + board[8],
-        diag1 = board[6] + board[4] + board[2],
-        diag2 = board[0] + board[4] + board[8];
+    var wins = [];
+        wins[0] = board[0] + board[1] + board[2],
+        wins[1] = board[3] + board[4] + board[5],
+        wins[2] = board[6] + board[7] + board[8],
+        wins[3] = board[0] + board[3] + board[6],
+        wins[4] = board[1] + board[4] + board[7],
+        wins[5] = board[2] + board[5] + board[8],
+        wins[6] = board[6] + board[4] + board[2],
+        wins[7] = board[0] + board[4] + board[8];
 
-    if(row1 === 3 || row2 ===3 || row3 ===3 || col1 ===3 || col2 ===3 || col3 ===3 || diag1 ===3 || diag2 ===3) {
-        gameOver = 1;
-        $(".space").off("click");
-        alert("Player 1 Wins!");
-        location.reload();
-    } else if (row1 === 12 || row2 ===12 || row3 ===12 || col1 ===12 || col2 ===12 || col3 ===12 || diag1 ===12 || diag2 ===12) {
-        gameOver = 1;
-        $(".space").off("click");
-        alert("Player 2 Wins!");
-        location.reload();
-    } else if (turns === 10) {
-        gameOver = 1;
-        alert("Cat's Game");
-        location.reload();
-    }
+    var total = player ? 3:12;
+    for( var i=0, i < wins.length(), ++i ) {
+        if ( wins[i] === total ) {
+            gameOver = 1;
+            $(".space").off("click");
+            alert("Player 1 Wins!");
+            location.reload();
+        } else if (turns === 10) {
+            gameOver = 1;
+            alert("Cat's Game");
+            location.reload();
+        }
+    }        
 }
 
 function turn(index){
