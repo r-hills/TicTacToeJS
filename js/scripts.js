@@ -6,7 +6,7 @@ $(document).ready(function() {
         $("button").addClass("hide");
         $(".radio-buttons").addClass("hide");
         gameOver = 0;
-        computer = $("input:radio[name='game-type']:checked").val();
+        computer = parseInt($("input:radio[name='game-type']:checked").val());
         console.log(computer);
         player = 1;
         turns = 1;
@@ -14,9 +14,17 @@ $(document).ready(function() {
         $(".space").empty();
         $(".player-turn").text(getPlayer());
 
+        // debugger;
+        if( computer === 3 ) {
+            mark = getMark();
+            spaceNumber = smartPick();
+            $(".space[value="+spaceNumber+"]").append("<h1 class='"+mark+"'> "+mark+" </h1>");
+            $(".player-turn").text(getPlayer());
+            testWin(newBoard.board)
+        }
 
         $(".space").one('click', function() {
-            debugger;
+            // debugger;
             mark = getMark();
             turn($(this).attr("value"));
             $(this).append("<h1 class='"+mark+"'> "+mark+" </h1>");
@@ -24,7 +32,8 @@ $(document).ready(function() {
             $(".player-turn").text(getPlayer());
             if( computer > 0 && !gameOver ) {
                 mark = getMark();
-                spaceNumber = randomPick();
+                if ( computer === 1 ) { spaceNumber = randomPick(); }
+                else { spaceNumber = smartPick(); }
                 $(".space[value="+spaceNumber+"]").append("<h1 class='"+mark+"'> "+mark+" </h1>");
                 $(".player-turn").text(getPlayer());
                 testWin(newBoard.board)
@@ -113,7 +122,39 @@ function randomPick() {
 }
 
 function smartPick() {
+    smartNumber = 0;
+    brd = newBoard.board;
 
+    if( turns === 1 ) { smartNumber = 2; }
 
-    return 2;
+    if( turns === 3 ) {
+        if( brd[6] === 0 ) {
+            smartNumber = 6;
+        }
+    }
+    if ( turns === 5 ) {
+        if( brd[0] > 0 ) { smartNumber = 8; }
+        if( brd[1] > 0 || brd[3] > 0 ) {
+            smartNumber = 8;
+        }
+        if( brd[5] > 0 || brd[7] > 0 ) {
+            smartNumber = 1;
+        }
+    }
+    if( turns === 7 ) {
+        if ( brd[5] > 0 ) { smartNumber = 7; }
+        if ( brd[7] > 0 ) { smartNumber = 5; }
+    }
+    // if ( turns === 7 ) {
+    //     if( brd[])
+    // }
+
+    if( !smartPick ) {
+        smartNumber = randomPick();
+    }
+
+    newBoard.markBoard(player, smartNumber);
+    player = player ? 0:1;
+    turns++;
+    return smartNumber;
 }
